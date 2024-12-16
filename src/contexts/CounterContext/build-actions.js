@@ -2,8 +2,8 @@ import * as actionTypes from "./actions-types";
 
 export const buildActions = (dispatch) => {
   return {
-    increment: () => dispatch({ type: actionTypes.INCREASE }),
-    decrement: () => dispatch({ type: actionTypes.DECREASE }),
+    increase: () => dispatch({ type: actionTypes.INCREASE }),
+    decrease: () => dispatch({ type: actionTypes.DECREASE }),
     reset: () => dispatch({ type: "CounterContext/RESET" }),
     setCounter: (payload) =>
       dispatch({ type: "CounterContext/SET_COUNTER", payload }),

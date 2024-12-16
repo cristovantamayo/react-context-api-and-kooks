@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useCounterContext } from "../../contexts/CounterContext";
+import { Button } from "../../components/Button";
+import { Heading } from "../../components/Heading";
 
 export const Home = () => {
   // eslint-disable-next-line
@@ -11,7 +13,10 @@ export const Home = () => {
 
   return (
     <div>
-      <h1 onClick={() => actions.increase()}>+</h1>
+      <Heading />
+      <div>
+        <Button onButtonClick={actions.increase}>+Increase</Button>
+      </div>
     </div>
   );
 };
